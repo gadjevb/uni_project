@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head ng-app="romeApp">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Roman Empire</title>
 </head>
-<body>
+<body ng-app="romeApp">
     <header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Imperium Romanum</a>
+                    <a class="navbar-brand" ng-href="#/">Imperium Romanum</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-        						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Historical periods
+                <li class="dropdown">
+        						<a class="dropdown-toggle" data-toggle="dropdown" href="">Historical periods
         						<span class="caret"></span></a>
        						<ul class="dropdown-menu">
-          					<li><a href="/sevenkings">The seven kings</a></li>
-          					<li><a href="/republic">Roman republic</a></li>
-          					<li><a href="/empire">Roman empire</a></li>
-          					<li><a href="/empirewest">West roman empire</a></li>
-          					<li><a href="/empireeast">East roman empire</a></li>
+          					<li><a ng-href="/#/sevenkings">The seven kings</a></li>
+          					<li><a ng-href="/#/republic">Roman republic</a></li>
+          					<li><a ng-href="/#/empire">Roman empire</a></li>
+          					<li><a ng-href="/#/empirewest">West roman empire</a></li>
+          					<li><a ng-href="/#/empireeast">East roman empire</a></li>
         						</ul>
       				  </li>
-      				<li><a href="/army">Roman army</a></li>
-                    <li><a href="/quiz">Quiz</a></li>
-                    <li><a href="/devinfo">Developer info</a></li>
+      				  <li><a ng-href="/#/army">Roman army</a></li>
+                <li><a ng-href="/#/quiz">Quiz</a></li>
+                <li><a ng-href="/#/devinfo">Developer info</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div ng-view></div>
+      <div ng-view></div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="app.module.js"></script>
 
 </body>
 </html>
