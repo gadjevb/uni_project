@@ -6,12 +6,15 @@
     <form>
       <ul>
         <li ng-repeat="each in questions">
+          <fieldset>
           {{ each.question }}
           <br>
-          <input type="radio" name={{ each.id }} value="A">{{ each.A }}<br>
-          <input type="radio" name={{ each.id }} value="B">{{ each.B }}<br>
-          <input type="radio" name={{ each.id }} value="C">{{ each.C }}<br>
-          <input type="radio" name={{ each.id }} value="D">{{ each.D }}<br>
+          <input type="radio" name="{{ each.id }}" value="A">{{ each.A }}<br>
+          <input type="radio" name="{{ each.id }}" value="B">{{ each.B }}<br>
+          <input type="radio" name="{{ each.id }}" value="C">{{ each.C }}<br>
+          <input type="radio" name="{{ each.id }}" value="D">{{ each.D }}<br>
+          <br>
+        </fieldset>
         </li>
       </ul>
     </form>
