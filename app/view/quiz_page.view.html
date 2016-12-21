@@ -1,1 +1,20 @@
-<p>Quiz</p>
+<div class="container-fluid row" ng-controller="questionsCtrl">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1>Quiz</h1>
+    <hr>
+    <form>
+      <ul>
+        <li ng-repeat="each in questions">
+          {{ each.question }}
+          <br>
+          <input type="radio" name={{ each.id }} value="A">{{ each.A }}<br>
+          <input type="radio" name={{ each.id }} value="B">{{ each.B }}<br>
+          <input type="radio" name={{ each.id }} value="C">{{ each.C }}<br>
+          <input type="radio" name={{ each.id }} value="D">{{ each.D }}<br>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="col-md-2"></div>
+</div>

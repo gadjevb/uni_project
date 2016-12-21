@@ -1,0 +1,20 @@
+{
+  "questions":[
+    {
+      "id":1,
+      "question":"Who was the first king of Rome?",
+      "A":"Romulus",
+      "B":"Titus",
+      "C":"Caesar",
+      "D":"Pompey"
+    },
+    {
+      "id":2,
+      "question":"When did the roman civilization began?",
+      "A":"8th century B.C.",
+      "B":"7th century B.C.",
+      "C":"6th century B.C.",
+      "D":"5th century B.C."
+    }
+  ]
+}
